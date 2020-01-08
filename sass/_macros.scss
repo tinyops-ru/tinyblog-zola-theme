@@ -7,9 +7,11 @@ figure.mini_logo {
   background-color: transparent;
   border: 2px solid $accent;
   border-radius: 100%;
+
   margin-top: 2em;
   margin-left: 1.5em;
   margin-right: 0.5em;
+
   float: left;
 
   > a {
@@ -27,11 +29,10 @@ figure.mini_logo {
 
 figure.mini_logo + h5 {
   float: left;
-  margin: 0;
   display: block;
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 40px;
+  margin: 40px 0 0;
   position: relative;
   z-index: 100;
 
@@ -49,17 +50,17 @@ ul.social_list {
     margin: 0.10em 0.10em 0.10em 0.10em;
     list-style: none;
     display: inline-block;
-    transition: all 0.35s ease-out;
+    transition: all 0.15s ease-out;
 
     > a {
       text-decoration: none;
       color: $text;
-      transition: all 0.35s ease-out;
+      transition: all 0.15s ease-out;
     }
 
     > i {
       margin-left: 0.25em;
-      transition: opacity 0.35s ease-out;
+      transition: opacity 0.15s ease-out;
       opacity: 0.70;
     }
   }

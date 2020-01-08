@@ -91,7 +91,7 @@ article {
   a:link {
     text-decoration: none;
     transition-property: all;
-    transition-duration: 0.35s;
+    transition-duration: 0.15s;
   }
 
   a:hover {
@@ -141,47 +141,6 @@ tr {
   100% {
     opacity: 1;
     margin-left: 0;
-  }
-}
-
-@keyframes slidein {
-  0% {
-    transform: translateY(-200%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.user_logo {
-  width: 125px;
-  height: 125px;
-
-  display: block;
-
-  background-color: transparent;
-
-  border: 5px solid $accent;
-  border-radius: 100%;
-
-  margin: 0 auto;
-
-  > a {
-    width: 115px;
-    height: 115px;
-
-    display: block;
-
-    margin: 0 auto;
-
-    background-size: 100%;
-    border-radius: 100%;
-
-    background-color: $accent;
-
-    animation: 250ms ease-in 0s 1 slidein;
-
-    border: 5px solid $background;
   }
 }
 
@@ -315,7 +274,7 @@ a#article_link:hover {
 
 h1.article_title:hover + ul#frontmatter {
   opacity: 1;
-  transition: opacity 0.30s ease-in;
+  transition: opacity 0.15s ease-in;
 }
 
 h1.article_title {
@@ -430,7 +389,7 @@ nav.pagination {
 
 .frontmatter_page {
   opacity: 0.5;
-  transition: opacity 0.35 ease-in-out 2s;
+  transition: opacity 0.15 ease-in-out 2s;
   margin: 0 auto;
 }
 
