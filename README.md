@@ -1,4 +1,4 @@
-# TinyBlog
+# TinyBlog тема для Zola
 Простая тема блога для генератора статических сайтов [Zola](https://github.com/getzola/zola).
 
 ## Как установить
@@ -42,4 +42,4 @@ theme = "tinyblog"
 ## Благодарности
 
 За основу TinyBlog темы была взята тема [Ergo](https://github.com/insipx/Ergo).
-Спасибо [Andrew Plaza].
+Спасибо [Andrew Plaza](https://github.com/insipx).
