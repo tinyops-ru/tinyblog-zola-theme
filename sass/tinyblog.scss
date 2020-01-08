@@ -276,13 +276,17 @@ a.article_link:hover {
   transition: all 0.15s ease-in;
 }
 
-h2 {
+h2, h5 {
   a {
     text-decoration: none;
   }
 
   a:hover {
     text-decoration: none;
+  }
+
+  a:visited {
+    color: darkgray;
   }
 }
 
