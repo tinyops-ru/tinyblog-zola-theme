@@ -286,12 +286,17 @@ h2 {
   }
 }
 
-h2.article_title:hover + ul#frontmatter {
+h1.article_title:hover + ul#frontmatter {
   opacity: 1;
-  transition: opacity 0.15s ease-in;
+  transition: opacity 0.25s ease-in;
 }
 
-h2.article_title {
+h2.article_title:hover + ul#frontmatter {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+
+h1.article_title, h2.article_title {
   padding-right: 5px;
 
   margin: 0 auto;
@@ -307,6 +312,10 @@ h2.article_title {
   > a:focus {
     outline: none;
   }
+}
+
+.article_content {
+  margin-bottom: 10px;
 }
 
 .post_list_item {
