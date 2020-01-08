@@ -5,15 +5,20 @@
 
 html, body {
   background-color: $background;
+
   font-family: 'Montserrat', 'Raleway', sans-serif;
   font-weight: 400;
+
   z-index: 50;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+
   margin-bottom: 12px;
+
   line-height: 1;
+
   color: $title;
 }
 
@@ -61,10 +66,12 @@ pre {
 blockquote {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 20px;
+
   margin-top: 20px;
   margin-bottom: 20px;
+
   max-width: 600px;
+
   border-left: 8px solid $accent;
   color: $text;
 }
@@ -132,7 +139,7 @@ tr {
   }
   100% {
     opacity: 1;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -153,7 +160,7 @@ tr {
   border: 5px solid $accent;
   border-radius: 100%;
   margin: 0 auto;
-  // transition: all 250ms ease-in-out;
+
   > a {
     width: 115px;
     height: 115px;
@@ -174,7 +181,6 @@ tr {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 90;
 }
 
 .header {
