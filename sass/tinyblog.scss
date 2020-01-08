@@ -163,12 +163,18 @@ tr {
   > a {
     width: 115px;
     height: 115px;
+
     display: block;
+
     margin: 0 auto;
+
     background-size: 100%;
     border-radius: 100%;
+
     background-color: $accent;
+
     animation: 250ms ease-in 0s 1 slidein;
+
     border: 5px solid $background;
   }
 }
@@ -176,7 +182,9 @@ tr {
 .overlord {
   display: block;
   position: absolute;
+
   z-index: 100;
+
   top: 0;
   left: 0;
   right: 0;
@@ -233,14 +241,17 @@ tr {
 
 .frontmatter {
   display: block;
-  font-size: 1em;
+
   padding-left: 0;
+
   color: $title;
-  font-style: bold;
+
   list-style-type: none;
+
   margin: 0 auto;
   margin-top: -3px;
   margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
@@ -253,11 +264,9 @@ tr {
     display: inline;
   }
 
-  display: block;
   opacity: 0.3;
   transition: opacity 0.70s ease-out 1.7s;
 }
-
 
 .dotDivider {
   padding-right: .3em;
