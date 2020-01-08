@@ -1,0 +1,35 @@
+# The URL the site will be built for
+base_url = "https://blog.tinyops.ru/tinyblog"
+
+title = "Alan Turing"
+# a description; you can use markdown here if you like
+description="\"*to develop the skill of correct thinking is in the first place to learn what you have to disregard. In order to go on, you have to know what to leave out.*\" \n -Kurt Gödel"
+default_language = "ru"
+
+highlight_theme = "solarized-light"
+generate_rss = true
+rss_limit = 20
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Gutenberg
+highlight_code = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[extra]
+website = "liquidthink.net"
+github = "lebe-dev"
+twitter = "mental_foreplay"
+# linkedin = ""
+email = "your@email.com"
+# instagram = ""
+# youtube = ""
+
+[original]
+author =  "insipx"
+homepage = "https://ergo.liquidthink.net"
+repo = "https://github.com/insipx/Ergo"
