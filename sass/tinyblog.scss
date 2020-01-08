@@ -314,10 +314,6 @@ h1.article_title, h2.article_title {
   }
 }
 
-.article_content {
-  margin-bottom: 10px;
-}
-
 .post_list_item {
   display: block;
 
@@ -326,6 +322,10 @@ h1.article_title, h2.article_title {
   margin: auto auto 4em;
 
   max-width: 600px;
+
+  .article_content {
+    margin-bottom: 10px;
+  }
 
   > ul {
     max-width: 600px;
