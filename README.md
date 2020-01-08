@@ -1,11 +1,11 @@
-# tinyblog zola theme
-A light and simple blog theme for [Zola](https://github.com/getzola/zola).
+# TinyBlog
+Простая тема блога для генератора статических сайтов [Zola](https://github.com/getzola/zola).
 
-## How to install
+## Как установить
 
-**1. Add git module**
+**1. Добавляем git модуль к вашему проекту**
 
-Create file `.gitmodules` in root
+В корне проекта создаем файл `.gitmodules` со следующим содержанием:
 
 ```
 [submodule "themes/tinyblog"]
@@ -13,24 +13,33 @@ Create file `.gitmodules` in root
 	url = git@github.com:lebe-dev/tinyblog-zola-theme.git
 ```
 
-**2. Create theme directory**
+**2. Создаем под каталог для темы**
+
+Для Windows:
+
+```shell script
+mkdir themes\tinyblog
+```
+
+Для Linux:
 
 ```shell script
 mkdir -p themes/tinyblog
 ```
 
-**3. Fetch submodule data**
+**3. Подгружаем тему**
 
 ```shell script
 git submodule update --init --recursive
 ```
 
-**4. Update config.toml**
+**4. Указываем тему в качестве основной**
 
 ```
 theme = "tinyblog"
 ```
 
-## Thanks
+## Благодарности
 
-Thanks to [Andrew Plaza](https://github.com/insipx), the creator of [Ergo theme](https://github.com/insipx/Ergo).
+За основу TinyBlog темы была взята тема [Ergo](https://github.com/insipx/Ergo).
+Спасибо [Andrew Plaza].
