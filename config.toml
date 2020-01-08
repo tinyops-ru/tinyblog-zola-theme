@@ -1,9 +1,9 @@
 # The URL the site will be built for
-base_url = "https://blog.tinyops.ru/tinyblog"
+base_url = "https://b.tinyops.ru/tinyblog"
 
-title = "Alan Turing"
+title = "William of Ockham"
 # a description; you can use markdown here if you like
-description="\"*to develop the skill of correct thinking is in the first place to learn what you have to disregard. In order to go on, you have to know what to leave out.*\" \n -Kurt Gödel"
+description="\"*The explanation requiring the fewest assumptions is most likely to be correct..*\""
 default_language = "ru"
 
 highlight_theme = "solarized-light"
