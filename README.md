@@ -30,3 +30,7 @@ git submodule update --init --recursive
 ```
 theme = "tinyblog"
 ```
+
+## Thanks
+
+Thanks to [Ergo theme](https://github.com/insipx/Ergo).
