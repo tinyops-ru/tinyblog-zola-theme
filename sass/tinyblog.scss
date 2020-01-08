@@ -496,6 +496,24 @@ nav.pagination {
 
 #logo {
   margin-left: 30px;
+
+  padding-top: 30px;
+
+  font-size: 1.4em;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  a, a:visited {
+    color: #8a8a8a;
+
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $accent;
+  }
 }
 
 .text-secondary {
