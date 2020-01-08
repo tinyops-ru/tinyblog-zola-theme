@@ -33,4 +33,4 @@ theme = "tinyblog"
 
 ## Thanks
 
-Thanks to [Ergo theme](https://github.com/insipx/Ergo).
+Thanks to [Andrew Plaza](https://github.com/insipx), the creator of [Ergo theme](https://github.com/insipx/Ergo).
