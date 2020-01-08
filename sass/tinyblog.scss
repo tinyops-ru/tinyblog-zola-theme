@@ -367,18 +367,27 @@ nav.pagination {
   margin: 75px auto 0;
 
   display: block;
+
+  text-align: center;
+
   z-index: 100;
+
   position: relative;
 
   > span.prev {
-    display: block;
-    float: left;
+    display: inline-block;
+
+    text-align: center;
+
+    margin-right: 10px;
+
     z-index: 100;
   }
 
   > span.next {
-    display: block;
-    float: right;
+    display: inline-block;
+    // float: right;
+    text-align: center;
     z-index: 100;
   }
 }
