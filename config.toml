@@ -21,7 +21,7 @@ highlight_code = true
 build_search_index = false
 
 [extra]
-website = "liquidthink.net"
+website = "b.tinyops.ru"
 github = "lebe-dev"
 twitter = "mental_foreplay"
 # linkedin = ""
