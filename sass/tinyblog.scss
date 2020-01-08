@@ -176,6 +176,7 @@ tr {
   > h2 {
     font-size: 2.5em;
     font-weight: 900;
+
     color: $accent;
   }
 
@@ -261,23 +262,36 @@ tr {
   }
 }
 
-a#article_link, a#article_link:visited {
-  transition: all 0.35s ease-out;
+a.article_link, a.article_link:visited {
+  transition: all 0.15s ease-out;
   text-decoration: none;
   color: $title;
 }
 
-a#article_link:hover {
+a.article_link:hover {
   color: $accent;
-  transition: all 0.35s ease-in;
+
+  text-decoration: none !important;
+
+  transition: all 0.15s ease-in;
 }
 
-h1.article_title:hover + ul#frontmatter {
+h2 {
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+h2.article_title:hover + ul#frontmatter {
   opacity: 1;
   transition: opacity 0.15s ease-in;
 }
 
-h1.article_title {
+h2.article_title {
   padding-right: 5px;
 
   margin: 0 auto;
@@ -326,16 +340,16 @@ h1.article_title {
 
 .foot_links {
   clear: both;
+
   display: block;
-  float: right;
+
   list-style-type: none;
+
   padding: 0;
   margin: 0;
 }
 
 .foot_list {
-  float: right;
-
   margin-right: 1.5em;
 
   z-index: 100;
@@ -464,4 +478,8 @@ nav.pagination {
 
 .text-secondary {
   color: gray;
+}
+
+footer {
+  text-align: center;
 }
