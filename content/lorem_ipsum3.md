@@ -1,7 +1,9 @@
 +++
 title="Test Post 3"
 date=2018-08-30
-category="test"
+[taxonomies]
+categories=["test"]
+tags = ["lorem-ipsum"]
 +++
 
 # A Really Clever Title

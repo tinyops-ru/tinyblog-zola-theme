@@ -2,20 +2,24 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-<header class="header">
-  {% block header %}
-  <h1 class="site_title text-primary">{{config.title}}</h1>
-  <h5 class="text-secondary">{{config.description | markdown(inline=true) | safe }}</h5>
-  {{ macros::social_list(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,
-  rss=config.generate_rss) }}
-  {% endblock header %}
-</header>
+<div class="container">
 
-<section class="post_list">
-  {% for page in paginator.pages %}
-    <article id="{{page.title}}" class="post_list_item">
-      <h2 class="article_title">
-        <a href="{{page.permalink}}" class="article_link">{{page.title}}</a>
+  <header class="pt-5 pb-5 mb-2 text-center">
+    {% block header %}
+
+    <h1 class="blog-title text-primary mb-4">{{config.title}}</h1>
+    <h5 class="text-secondary mb-4">{{config.description | markdown(inline=true) | safe }}</h5>
+
+    {{ macros::social_list(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,
+    rss=config.generate_rss) }}
+    {% endblock header %}
+  </header>
+
+  <section>
+    {% for page in paginator.pages %}
+    <article class="mb-5">
+      <h2 class="mb-1">
+        <a href="{{page.permalink}}">{{page.title}}</a>
       </h2>
       {% if page.date %}
       {{ macros::frontmatter(classes="", date=page.date, word_count=page.word_count, read_time=page.reading_time) }}
@@ -23,29 +27,29 @@
       {{ macros::frontmatter(classes="", date="", word_count=page.word_count, read_time=page.reading_time) }}
       {% endif %}
       {% if page.summary %}
-      <p class="article_content">{{ page.summary | safe }}</p>
+      <p>{{ page.summary | safe }}</p>
       {% else %}
-      <p class="article_content">{{ page.content | striptags | truncate | safe }}</p>
+      <p>{{ page.content | striptags | truncate | safe }}</p>
       {% endif %}
-      <a class="button small" href="{{page.permalink}}">Читать →</a>
+      <a href="{{page.permalink}}" class="btn-sm btn btn-light">Читать →</a>
     </article>
-  {% endfor %}
-</section>
+    {% endfor %}
+  </section>
+</div>
 {% endblock content %}
 
 {% block pagination %}
-<nav class="pagination">
+<nav class="container w-50 text-center">
   {% if paginator.previous %}
-  <span class="prev">
-    <a rel="prev" href="{{paginator.previous}}" title="Предыдущая страница"
-       class="button medium font_faint">← назад</a>
-  </span>
+    <span class="prev">
+      <a rel="prev" class="btn btn-sm btn-light" href="{{paginator.previous}}" title="Предыдущая страница">← назад</a>
+    </span>
   {% endif %}
 
   {% if paginator.next %}
   <span class="next">
     <a rel="next" title="Следующая страница"
-       href="{{paginator.next}}" class="button medium font_faint">вперед →</a>
+       href="{{paginator.next}}" class="btn btn-sm btn-light">вперед →</a>
   </span>
   {% endif %}
 </nav>

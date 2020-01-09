@@ -1,55 +1,89 @@
 {% macro mini_logo(classes, title, siteurl) %}
 <div id="logo">
-    <a href="{{siteurl}}" title="Вернуться на главную страницу">{{title}}</a>
+    <a href="{{siteurl}}" title="Вернуться на главную страницу">
+        <i class="logo__icon fas fa-chevron-left mr-1"></i> {{title}}
+    </a>
 </div>
 {% endmacro mini_logo %}
 
-<!-- classes=any extra styling, bsize=buttonsize, extra=config.extra, siteurl=config.base_url -->
 {% macro social_list(classes, bsize, extra, rss, siteurl) %}
-<ul class="social_list {{classes}}">
+<div>
     {% if extra.website %}
-    <li class="button {{bsize}} font_faint"><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a>
-    </li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="https://{{extra.website}}" class="btn btn-sm btn-light" target="_blank">{{extra.website}}</a>
+        </div>
+
     {% endif %}
+
     {% if extra.github %}
-    <li class="button {{bsize}} font_faint"><a href="https://github.com/{{extra.github}}" target="_blank">{{extra.github}}</a><i
-            class="fab fa-github"></i></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="https://github.com/{{extra.github}}" class="btn btn-sm btn-light"
+               target="_blank">{{extra.github}} <i class="fab fa-github"></i></a>
+        </div>
+
     {% endif %}
+
     {% if extra.twitter %}
-    <li class="button {{bsize}} font_faint"><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i
-            class="fab fa-twitter"></i></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="https://twitter.com/{{extra.twitter}}" class="btn btn-sm btn-light"
+               target="_blank">{{extra.twitter}} <i class="fab fa-twitter"></i></a>
+        </div>
+
     {% endif %}
+
     {% if extra.instagram %}
-    <li class="button {{bsize}} font_faint"><a href="https://instagram.com/{{extra.instagram}}" target="_blank">{{extra.instagram}}</a><i
-            class="fab fa-instagram"></i></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="https://instagram.com/{{extra.instagram}}" class="btn btn-sm btn-light"
+               target="_blank">{{extra.instagram}} <i class="fab fa-instagram"></i></a>
+        </div>
+
     {% endif %}
+
     {% if extra.youtube %}
-    <li class="button {{bsize}} font_faint"><a href="https://youtube.com/channel/{{extra.youtube}}" target="_blank">{{extra.youtube}}<i
-            class="fab fa-youtube"></i></a></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="https://youtube.com/{{extra.youtube}}"
+               class="btn btn-sm btn-light" target="_blank">{{extra.youtube}}</a>
+        </div>
+
     {% endif %}
-    {% if extra.linkedin %}
-    <li class="button {{bsize}} font_faint"><a href="https://www.linkedin.com/in/{{extra.linkedin}}" target="_blank">{{extra.linkedin}}</a><i
-            class="fab fa-linkedin"></i></li>
-    {% endif %}
+
     {% if extra.email %}
-    <li class="button {{bsize}} font_faint"><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i
-            class="fas fa-envelope"></i></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="mailto:{{extra.email}}"
+               class="btn btn-sm btn-light" target="_blank">почта <i class="far fa-envelope"></i></a>
+        </div>
+
     {% endif %}
+
     {% if rss %}
-    <li class="button {{bsize}} font_faint"><a href="{{siteurl}}/rss.xml" target="_blank">rss</a><i
-            class="fas fa-rss"></i></li>
+
+        <div class="d-inline-block text-secondary">
+            <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light" target="_blank">rss  <i class="fas fa-rss"></i></a>
+        </div>
+
     {% endif %}
-</ul>
+</div>
 {% endmacro social_list %}
 
 {% macro frontmatter(classes, date, word_count, read_time) %}
-<ul class="frontmatter {{classes}}" id="frontmatter">
-    <li>
+<div class="frontmatter mb-3 font-weight-bold">
+    <div class="d-inline-block">
         <time class="article_time" datetime="{{date}}">{{ date | date(format="%B %d, %Y") }}</time>
-    </li>
-    <span class="dotDivider"></span>
-    <li> слов {{word_count}}</li>
-    <span class="dotDivider"></span>
-    <li> {{read_time}} мин</li>
-</ul>
+    </div>
+
+    <span class="text-secondary">-</span>
+
+    <div class="d-inline-block"> слов {{word_count}}</div>
+
+    <span class="text-secondary">-</span>
+
+    <div class="d-inline-block"> {{read_time}} мин</div>
+
+</div>
 {% endmacro frontmatter %}

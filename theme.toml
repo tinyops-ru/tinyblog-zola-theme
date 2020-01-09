@@ -5,6 +5,12 @@ homepage = "https://github.com/lebe-dev/tinyblog-zola-theme"
 min_version = "0.4.1"
 demo = "https://github.com/lebe-dev"
 
+taxonomies = [
+ {name = "tags", rss = true},
+ {name = "categories", paginate_by = 5, rss = true},  # 5 items per page for a term
+ {name = "authors"} # Basic definition: no RSS or pagination
+]
+
 [author]
 name = "Eugene Lebedev"
 homepage = "https://tinyops.ru"

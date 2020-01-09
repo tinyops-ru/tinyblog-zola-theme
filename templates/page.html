@@ -6,16 +6,21 @@
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url) }}
 </nav>
 
-<section class="post_container">
-  <article>
-    {% block post %}
-    <h1 class="article_title">
-      {{ page.title }}
-    </h1>
-    {{ macros::frontmatter(classes="frontmatter_page", date=page.date, word_count=page.word_count,
-    read_time=page.reading_time) }}
-    {{ page.content | safe }}
-    {% endblock post %}
-  </article>
+<section class="container">
+  {% block post %}
+  <h1 class="page-title">
+    {{ page.title }}
+  </h1>
+  {{ macros::frontmatter(classes="frontmatter_page", date=page.date, word_count=page.word_count,
+  read_time=page.reading_time) }}
+
+  <div class="mb-4">
+    {% for tag in page.taxonomies['tags'] %}
+      <a class="btn btn-tiny btn-light" href="/tags/{{tag}}/">{{tag}}</a>
+    {% endfor %}
+  </div>
+
+  {{ page.content | safe }}
+  {% endblock post %}
 </section>
 {% endblock content %}

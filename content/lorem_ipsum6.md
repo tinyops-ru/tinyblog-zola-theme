@@ -1,7 +1,9 @@
 +++
 title="Test Post 7"
 date=2018-08-30
-category="test"
+[taxonomies]
+categories=["test"]
+tags = ["demo"]
 +++
 
 # A Really Clever Title

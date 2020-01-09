@@ -1,7 +1,9 @@
 +++
 title = "Возможности разметки Markdown"
 date = 2020-01-08
-category = "how-to"
+[taxonomies]
+categories=["tutorials"]
+tags = ["how-to", "features"]
 +++
 
 Это небольшой пример поста того что мы можем делать с темой TinyBlog.

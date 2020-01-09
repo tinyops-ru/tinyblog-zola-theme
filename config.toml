@@ -20,6 +20,12 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+taxonomies = [
+ {name = "tags", rss = true},
+ {name = "categories", paginate_by = 5, rss = true},  # 5 items per page for a term
+ {name = "authors"} # Basic definition: no RSS or pagination
+]
+
 [extra]
 website = "b.tinyops.ru"
 github = "lebe-dev"
