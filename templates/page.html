@@ -14,7 +14,7 @@
   {{ macros::frontmatter(classes="frontmatter_page", date=page.date, word_count=page.word_count,
   read_time=page.reading_time) }}
 
-  <div class="mb-4">
+  <div class="mb-3 mt-3">
     {% for tag in page.taxonomies['tags'] %}
       <a class="btn btn-tiny btn-light" href="/tags/{{tag}}/">{{tag}}</a>
     {% endfor %}
