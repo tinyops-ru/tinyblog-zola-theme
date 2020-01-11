@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+    <nav id="overlord" class="overlord">
+        {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url) }}
+    </nav>
+
+    <section class="container">
+        <h2 class="mb-3">Страница не найдена - 404</h2>
+        <div>Запрашиваемый ресурс не был найден, попробуйте воспользоваться ссылками:</div>
+
+        <ul>
+            <li>
+                <a href="/categories/">Все категории</a>
+            </li>
+            <li>
+                <a href="/tags/">Все тэги</a>
+            </li>
+            <li>
+                <a href="/">Вернуться на главную страницу блога</a>
+            </li>
+        </ul>
+    </section>
+{% endblock content %}
