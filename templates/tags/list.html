@@ -6,11 +6,22 @@
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
 </nav>
 
-<section class="post_container">
-  <article>
-    {% for term in terms %}
-    <div>{{term.name}}</div>
-    {% endfor %}
-  </article>
+<section class="container">
+
+    <h3 class="text-dark mb-4">Тэги</h3>
+
+    {% set tags = get_taxonomy(kind="tags") %}
+    {% set items = tags.items %}
+
+    <ul>
+        {% for tag in items %}
+            <li class="p-0 m-0">
+                <h6 class="mt-0 mb-2">
+                    <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
+                </h6>
+            </li>
+        {% endfor %}
+    </ul>
+
 </section>
 {% endblock content %}
