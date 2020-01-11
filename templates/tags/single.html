@@ -6,9 +6,25 @@
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
 </nav>
 
-<section class="post_container">
-  <article>
-    <h4>Тэг {{term.name}}</h4>
-  </article>
+<section class="container">
+    <h3 class="text-dark mb-4">Все материалы с тэгом <span class="text-primary">{{term.name}}</span></h3>
+
+    {% set tags = get_taxonomy(kind="tags") %}
+    {% set items = tags.items | filter(attribute="name", value=term.name) %}
+
+    <ul>
+        {% for page in items[0].pages %}
+            <li>
+                <h5>
+                    <a href="{{ page.slug }}">{{ page.title }}</a>
+                </h5>
+
+                <div class="text-secondary text-small">
+                    {{ page.date | date(format="%B %d, %Y") }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
 </section>
 {% endblock content %}

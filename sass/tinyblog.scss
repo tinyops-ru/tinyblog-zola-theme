@@ -165,7 +165,11 @@ footer {
 }
 
 .text-small {
-  font-size: $text_small;
+  font-size: $text-small;
+}
+
+.text-tiny {
+  font-size: $text-tiny;
 }
 
 .blog-title {
