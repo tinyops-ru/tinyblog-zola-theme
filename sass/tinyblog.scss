@@ -71,6 +71,16 @@ p {
   padding-bottom: 0;
 }
 
+table {
+  tr {
+    border-bottom: 1px solid lightgray;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
 details {
   margin-bottom: 5px;
 }
