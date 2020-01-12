@@ -38,6 +38,9 @@ email = "your@email.com"
 # Yandex.WebMaster
 yandex_webmaster_verification_code = ""
 
+# Yandex Metrika
+yandex_metrika_counter = ""
+
 [original]
 author =  "insipx"
 homepage = "https://ergo.liquidthink.net"

@@ -7,9 +7,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- SEO -->
-  <title> {{ config.title }} </title>
+  <title>{{ config.title }}</title>
 
-  {{ macros::yandex_metrika(classes="", extra=config.extra) }}
+  {{ macros::yandex_webmaster(classes="", extra=config.extra) }}
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -42,5 +42,7 @@
 
 <footer class="mt-5 mb-5">
 </footer>
+
+{{ macros::yandex_metrika(classes="", extra=config.extra) }}
 </body>
 </html>
