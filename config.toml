@@ -35,6 +35,9 @@ email = "your@email.com"
 # instagram = ""
 # youtube = ""
 
+# Yandex.Metrika
+yandex_metrika_verification_code=""
+
 [original]
 author =  "insipx"
 homepage = "https://ergo.liquidthink.net"
