@@ -36,7 +36,7 @@ email = "your@email.com"
 # youtube = ""
 
 # Yandex.Metrika
-yandex_metrika_verification_code=""
+yandex_metrika_verification_code = ""
 
 [original]
 author =  "insipx"

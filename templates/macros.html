@@ -87,3 +87,10 @@
 
 </div>
 {% endmacro frontmatter %}
+
+{% macro yandex_metrika(classes, extra) %}
+    {% if extra.yandex_metrika_verification_code %}
+        <!-- Yandex.Metrika Verification Code -->
+        <meta name="yandex-verification" content="{{ extra.yandex_metrika_verification_code }}" />
+    {% endif %}
+{% endmacro frontmatter %}
