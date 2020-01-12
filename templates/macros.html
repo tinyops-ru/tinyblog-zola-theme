@@ -88,9 +88,9 @@
 </div>
 {% endmacro frontmatter %}
 
-{% macro yandex_metrika(classes, extra) %}
-    {% if extra.yandex_metrika_verification_code %}
-        <!-- Yandex.Metrika Verification Code -->
-        <meta name="yandex-verification" content="{{ extra.yandex_metrika_verification_code }}" />
+{% macro yandex_webmaster(classes, extra) %}
+    {% if extra.yandex_webmaster_verification_code %}
+        <!-- Yandex.Webmaster Verification Code -->
+        <meta name="yandex-verification" content="{{ extra.yandex_webmaster_verification_code }}" />
     {% endif %}
 {% endmacro frontmatter %}
