@@ -40,8 +40,3 @@ yandex_webmaster_verification_code = ""
 
 # Yandex Metrika
 yandex_metrika_counter = ""
-
-[original]
-author =  "insipx"
-homepage = "https://ergo.liquidthink.net"
-repo = "https://github.com/insipx/Ergo"
