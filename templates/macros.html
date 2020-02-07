@@ -9,31 +9,25 @@
 {% macro social_list(classes, bsize, extra, rss, siteurl) %}
 <div>
     {% if extra.website %}
-
         <div class="d-inline-block text-secondary">
             <a href="https://{{extra.website}}" class="btn btn-sm btn-light" target="_blank">{{extra.website}}</a>
         </div>
-
     {% endif %}
 
     {% if extra.github %}
-
         <div class="d-inline-block text-secondary">
             <a href="https://github.com/{{extra.github}}" class="btn btn-sm btn-light"
                target="_blank">{{extra.github}} <i class="fab fa-github"></i></a>
         </div>
-
     {% endif %}
 
     {% if extra.twitter %}
-
         <div class="d-inline-block text-secondary">
             <a href="https://twitter.com/{{extra.twitter}}" class="btn btn-sm btn-light"
                target="_blank">{{extra.twitter}} <i class="fab fa-twitter"></i></a>
         </div>
 
     {% endif %}
-
     {% if extra.instagram %}
 
         <div class="d-inline-block text-secondary">
@@ -44,29 +38,23 @@
     {% endif %}
 
     {% if extra.youtube %}
-
         <div class="d-inline-block text-secondary">
             <a href="https://youtube.com/{{extra.youtube}}"
                class="btn btn-sm btn-light" target="_blank">{{extra.youtube}}</a>
         </div>
-
     {% endif %}
 
     {% if extra.email %}
-
         <div class="d-inline-block text-secondary">
             <a href="mailto:{{extra.email}}"
                class="btn btn-sm btn-light" target="_blank">почта <i class="far fa-envelope"></i></a>
         </div>
-
     {% endif %}
 
     {% if rss %}
-
         <div class="d-inline-block text-secondary">
             <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light" target="_blank">rss  <i class="fas fa-rss"></i></a>
         </div>
-
     {% endif %}
 </div>
 {% endmacro social_list %}
