@@ -1,5 +1,10 @@
 {% extends "base.html" %}
+
 {% import "macros.html" as macros %}
+
+{% block page_title %}
+<title>{{ page.title }} | {{ config.title }}</title>
+{% endblock page_title %}
 
 {% block content %}
 <nav id="overlord" class="overlord">
