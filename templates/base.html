@@ -11,6 +11,26 @@
 
   <link rel="canonical" href="{{config.base_url}}">
 
+  {% if extra.open-graph_url %}
+  <meta property="og:url" content="{{ extra.open-graph_url }}" />
+  {% endif %}
+
+  {% if extra.open-graph_title %}
+  <meta property="og:title" content="{{ extra.open-graph_title }}" />
+  {% endif %}
+
+  {% if extra.open-graph_description %}
+  <meta property="og:description" content="{{ extra.open-graph_description }}" />
+  {% endif %}
+
+  {% if extra.open-graph_type %}
+  <meta property="og:type" content="{{ extra.open-graph_type }}" />
+  {% endif %}
+
+  {% if extra.open-graph_image %}
+  <meta property="og:image" content="{{ extra.open-graph_image }}" />
+  {% endif %}
+
   {{ macros::yandex_webmaster(classes="", extra=config.extra) }}
 
   <!-- Enable responsiveness on mobile devices-->

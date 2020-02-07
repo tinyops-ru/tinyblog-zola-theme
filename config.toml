@@ -35,6 +35,12 @@ email = "your@email.com"
 # instagram = ""
 # youtube = ""
 
+open-graph_url = "https://b.tinyops.ru"
+open-graph_type = "blog"
+open-graph_title = ""
+open-graph_description = ""
+open-graph_image = ""
+
 # Yandex.WebMaster
 yandex_webmaster_verification_code = ""
 
