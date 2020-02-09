@@ -1,5 +1,6 @@
 +++
 title="Test Post 8"
+description = "Lorem ipsum dolor sit amet"
 date=2018-08-29
 [taxonomies]
 categories=["test"]

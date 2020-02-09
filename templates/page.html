@@ -6,6 +6,10 @@
 <title>{{ page.title }} | {{ config.title }}</title>
 {% endblock page_title %}
 
+{% block meta_tag_description %}
+<meta name="description" content="{{page.description}}">
+{% endblock meta_tag_description %}
+
 {% block content %}
 <nav id="overlord" class="overlord">
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url) }}

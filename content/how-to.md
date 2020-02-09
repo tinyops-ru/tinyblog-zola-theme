@@ -1,5 +1,6 @@
 +++
 title = "Возможности разметки Markdown"
+description = "Рассказ о всех возможностях Markdown"
 date = 2020-01-08
 [taxonomies]
 categories=["tutorials"]

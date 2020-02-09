@@ -11,6 +11,10 @@
   <title>{{ config.title }}</title>
   {% endblock page_title %}
 
+  {% block meta_tag_description %}
+  <meta name="description" content="{{config.description}}">
+  {% endblock meta_tag_description %}
+
   <link rel="canonical" href="{{config.base_url}}">
 
   {% if config.extra.open_graph_url %}
