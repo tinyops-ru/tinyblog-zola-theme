@@ -41,6 +41,22 @@ git submodule update --init --recursive
 theme = "tinyblog"
 ```
 
+## Как подтвердить владение сайтом в Яндекс.Вэбмастере
+
+Добавляем в `config.xml` в секцию `[extra]` параметр `yandex_webmaster_verification_code`:
+
+```toml
+yandex_webmaster_verification_code = "КОД ПОДТВЕРЖДЕНИЯ"
+```
+
+## Как подключить Яндекс.Метрику
+
+Добавляем в `config.xml` в секцию `[extra]` параметр `yandex_metrika_counter`:
+
+```toml
+yandex_metrika_counter = "НОМЕР-СЧЕТЧИКА"
+```
+
 ## RoadMap
 
 **Версия 1.2.0**
