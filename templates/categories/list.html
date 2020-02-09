@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
+{% block page_title %}
+<title>Список категорий | {{ config.title }}</title>
+{% endblock page_title %}
+
 {% block meta_tag_description %}
 <meta name="description" content="Все категории блога">
 {% endblock meta_tag_description %}
