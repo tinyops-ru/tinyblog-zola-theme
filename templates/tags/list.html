@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
+{% block page_title %}
+<title>Список тэгов | {{ config.title }}</title>
+{% endblock page_title %}
+
 {% block meta_tag_description %}
 <meta name="description" content="Все доступные тэги">
 {% endblock meta_tag_description %}
