@@ -1,7 +1,8 @@
 +++
 title="Test Post 4"
 description = "Lorem ipsum dolor sit amet"
-date=2018-08-30
+date = 2020-01-19T11:00:00Z
+
 [taxonomies]
 categories=["test"]
 tags = ["demo"]
