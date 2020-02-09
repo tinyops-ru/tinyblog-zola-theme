@@ -16,8 +16,9 @@
         <lastBuildDate>{{ last_build_date }}</lastBuildDate>
 
         {% if config.extra.yandex_turbo_pages %}
-        <turbo:analytics></turbo:analytics>
-        <turbo:adNetwork></turbo:adNetwork>
+        <turbo:analytics type="Yandex"
+                         id="{{ config.extra.yandex_turbo_pages_metrika_id }}"
+                         params="{}"></turbo:analytics>
         {% endif %}
 
         {% for page in pages %}
