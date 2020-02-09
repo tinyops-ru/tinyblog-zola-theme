@@ -31,7 +31,7 @@
             <pubDate>{{ page.date }}</pubDate>
             <link>{{ config.base_url }}/{{ page.slug }}</link>
             <guid>{{ config.base_url }}/{{ page.slug }}</guid>
-            <description>{{ page.content }}</description>
+            <description>{{ page.description }}</description>
             {% if config.extra.yandex_turbo_pages %}
                 <turbo:source></turbo:source>
                 <turbo:topic></turbo:topic>
@@ -54,9 +54,7 @@
                 </metrics>
                 <yandex:related></yandex:related>
                 <turbo:content>
-                    <![CDATA[
-                            <!-- Содержимое 1 страницы -->
-                        ]]>
+                    {{ page.content }}
                 </turbo:content>
             {% endif %}
         </item>
