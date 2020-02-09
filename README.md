@@ -57,6 +57,16 @@ yandex_webmaster_verification_code = "КОД ПОДТВЕРЖДЕНИЯ"
 yandex_metrika_counter = "НОМЕР-СЧЕТЧИКА"
 ```
 
+## Как подключить Яндекс.Турбо
+
+Подробнее про сервис - [https://yandex.ru/dev/turbo/](https://yandex.ru/dev/turbo/)
+ 
+Добавляем в `config.xml` в секцию `[extra]` включаем параметр `yandex_turbo_pages`:
+ 
+```toml
+yandex_turbo_pages = true
+```
+
 ## RoadMap
 
 **Версия 1.2.0**
