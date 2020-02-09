@@ -12,10 +12,10 @@
   {% endblock page_title %}
 
   {% block meta_tag_description %}
-  <meta name="description" content="{{config.description}}">
+  <meta name="description" content="{{ config.description }}">
   {% endblock meta_tag_description %}
 
-  <link rel="canonical" href="{{config.base_url}}">
+  <link rel="canonical" href="{{ config.base_url }}">
 
   {% if config.extra.open_graph_url %}
   <meta property="og:url" content="{{ config.extra.open_graph_url }}" />
@@ -25,9 +25,9 @@
   <meta property="og:title" content="{{ config.extra.open_graph_title }}" />
   {% endif %}
 
-  {% if config.extra.open_graph_description %}
-  <meta property="og:description" content="{{ config.extra.open_graph_description }}" />
-  {% endif %}
+  {% block open_graph_description %}
+  <meta property="og:description" content="{{ config.description }}" />
+  {% endblock open_graph_description %}
 
   {% if config.extra.open_graph_type %}
   <meta property="og:type" content="{{ config.extra.open_graph_type }}" />

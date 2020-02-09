@@ -7,8 +7,12 @@
 {% endblock page_title %}
 
 {% block meta_tag_description %}
-<meta name="description" content="{{page.description}}">
+<meta name="description" content="{{ page.description }}">
 {% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="{{ page.description }}"/>
+{% endblock open_graph_description %}
 
 {% block content %}
 <nav id="overlord" class="overlord">
