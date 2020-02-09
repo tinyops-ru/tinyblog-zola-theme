@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    {% if config.extra.yandex_turbo_pages %}
+     xmlns:yandex="http://news.yandex.ru"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:turbo="http://turbo.yandex.ru"
+    {% endif %}
+     version="2.0">
     <channel>
         <title>{{ config.title }}</title>
         <link>{{ config.base_url }}</link>
@@ -9,13 +15,49 @@
         <atom:link href="{{ config.base_url }}/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>{{ last_build_date }}</lastBuildDate>
 
+        {% if config.extra.yandex_turbo_pages %}
+        <turbo:analytics></turbo:analytics>
+        <turbo:adNetwork></turbo:adNetwork>
+        {% endif %}
+
         {% for page in pages %}
-        <item>
+        <item
+            {% if config.extra.yandex_turbo_pages %}
+                turbo="true"
+            {% endif %}
+            >
             <title>{{ page.title }}</title>
             <pubDate>{{ page.date }}</pubDate>
             <link>{{ config.base_url }}/{{ page.slug }}</link>
             <guid>{{ config.base_url }}/{{ page.slug }}</guid>
             <description>{{ page.content }}</description>
+            {% if config.extra.yandex_turbo_pages %}
+                <turbo:source></turbo:source>
+                <turbo:topic></turbo:topic>
+                <metrics>
+                    <yandex schema_identifier="{{ config.extra.yandex_turbo_pages_metrika_id }}">
+                        <breadcrumblist>
+                            <breadcrumb url="{{ config.base_url }}/" text="Главная"/>
+
+                            {% for category in page.taxonomies['categories'] %}
+                            <breadcrumb url="{{ config.base_url }}/categories/{{ category }}" text="Категория {{ category }}"/>
+                            {% endfor %}
+
+                            {% for tag in page.taxonomies['tags'] %}
+                                <breadcrumb url="{{ config.base_url }}/tags/{{ tag }}" text="Тэг {{ tag }}"/>
+                            {% endfor %}
+
+                            <breadcrumb url="{{ config.base_url }}/{{ page.slug }}" text="{{ page.title }}"/>
+                        </breadcrumblist>
+                    </yandex>
+                </metrics>
+                <yandex:related></yandex:related>
+                <turbo:content>
+                    <![CDATA[
+                            <!-- Содержимое 1 страницы -->
+                        ]]>
+                </turbo:content>
+            {% endif %}
         </item>
         {% endfor %}
         

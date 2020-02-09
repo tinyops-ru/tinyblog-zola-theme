@@ -40,8 +40,17 @@ open_graph_type = "blog"
 open_graph_title = "William of Ockham Blog"
 open_graph_image = ""
 
+#------------------------------------------
+# YANDEX
+#------------------------------------------
+
 # Yandex.WebMaster
 yandex_webmaster_verification_code = ""
 
 # Yandex Metrika
 yandex_metrika_counter = ""
+
+# Yandex Turbo Pages
+# https://yandex.ru/dev/turbo/
+yandex_turbo_pages = false
+yandex_turbo_pages_metrika_id = 123456
