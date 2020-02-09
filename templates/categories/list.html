@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
+{% block meta_tag_description %}
+<meta name="description" content="Все категории блога">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="Все категории блога"/>
+{% endblock open_graph_description %}
+
 {% block content %}
 <nav id="overlord" class="overlord">
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}

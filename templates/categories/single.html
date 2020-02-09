@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
+{% block meta_tag_description %}
+<meta name="description" content="Все статьи из категории {{ term.name }}">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="Все статьи из категории {{ term.name }}"/>
+{% endblock open_graph_description %}
+
 {% block content %}
 <nav id="overlord" class="overlord">
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
 </nav>
 
 <section class="container">
-    <h3 class="text-dark mb-4">Все материалы с из категории <span class="text-primary">{{term.name}}</span></h3>
+    <h3 class="text-dark mb-4">Все материалы с из категории <span class="text-primary">{{ term.name }}</span></h3>
 
     {% set categories = get_taxonomy(kind="categories") %}
     {% set items = categories.items | filter(attribute="name", value=term.name) %}

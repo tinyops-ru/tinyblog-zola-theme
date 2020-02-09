@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
+{% block meta_tag_description %}
+<meta name="description" content="Все статьи с тэгом {{ term.name }}">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="Все статьи с тэгом {{ term.name }}"/>
+{% endblock open_graph_description %}
+
 {% block content %}
 <nav id="overlord" class="overlord">
   {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
 </nav>
 
 <section class="container">
-    <h3 class="text-dark mb-4">Все материалы с тэгом <span class="text-primary">{{term.name}}</span></h3>
+    <h3 class="text-dark mb-4">Все материалы с тэгом <span class="text-primary">{{ term.name }}</span></h3>
 
     {% set tags = get_taxonomy(kind="tags") %}
     {% set items = tags.items | filter(attribute="name", value=term.name) %}
