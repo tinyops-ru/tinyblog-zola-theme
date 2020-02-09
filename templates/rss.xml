@@ -17,7 +17,7 @@
 
         {% if config.extra.yandex_turbo_pages %}
         <turbo:analytics type="Yandex"
-                         id="{{ config.extra.yandex_turbo_pages_metrika_id }}"
+                         id="{{ config.extra.yandex_metrika_counter }}"
                          params="{}"></turbo:analytics>
         {% endif %}
 
@@ -36,7 +36,7 @@
                 <turbo:source></turbo:source>
                 <turbo:topic></turbo:topic>
                 <metrics>
-                    <yandex schema_identifier="{{ config.extra.yandex_turbo_pages_metrika_id }}">
+                    <yandex schema_identifier="{{ config.extra.yandex_metrika_counter }}">
                         <breadcrumblist>
                             <breadcrumb url="{{ config.base_url }}/" text="Главная"/>
 
