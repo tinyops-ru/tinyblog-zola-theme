@@ -1,6 +1,8 @@
 # TinyBlog тема для Zola
 Простая тема блога для генератора статических сайтов [Zola](https://github.com/getzola/zola).
 
+[Демо](https://b.tinyops.ru)
+
 ![Как выглядит тема](screenshot.png "Как выглядит тема")
 
 ## Как установить
