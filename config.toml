@@ -40,6 +40,8 @@ open_graph_type = "blog"
 open_graph_title = "William of Ockham Blog"
 open_graph_image = ""
 
+favicon_type = "image/x-icon"
+
 #------------------------------------------
 # YANDEX
 #------------------------------------------

@@ -43,6 +43,16 @@ git submodule update --init --recursive
 theme = "tinyblog"
 ```
 
+# Настройка
+
+## Как указать тип favicon
+
+В секции `extra` определить параметр `favicon_type`. Значение по умолчанию `image/x-icon`.
+
+```toml
+favicon_type = "image/x-icon"
+```
+
 ## Как подтвердить владение сайтом в Яндекс.Вэбмастере
 
 Добавляем в `config.xml` в секцию `[extra]` параметр `yandex_webmaster_verification_code`:
