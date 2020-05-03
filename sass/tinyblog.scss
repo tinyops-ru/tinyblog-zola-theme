@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 
   font-weight: 700;
 
-  margin-top: 30px;
-
   line-height: 1;
+
+  margin-top: 30px;
 
   color: $title;
 
@@ -68,7 +68,7 @@ pre {
 
 p {
   padding-top: 10px;
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 
 table {
@@ -121,11 +121,15 @@ a:hover {
 
 blockquote {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 1px;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
 
   border-left: 6px solid $accent;
+
+  background-color: #fdfdfd;
 
   color: $dark;
 }
@@ -183,7 +187,17 @@ footer {
 }
 
 .page-title {
-  font-size: 2.6em;
+  font-size: 2.3em;
 
   margin-bottom: 10px;
+}
+
+.article_time {
+  text-transform: uppercase;
+
+  font-size: 0.8em;
+
+  color: #a0a0a0;
+
+  font-weight: bold;
 }
