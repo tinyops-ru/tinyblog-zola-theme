@@ -29,7 +29,7 @@
       {% if page.summary %}
       <p>{{ page.summary | safe }}</p>
       {% else %}
-      <p>{{ page.content | striptags | truncate | safe }}</p>
+      <p>{{ page.description | striptags | safe }}</p>
       {% endif %}
       <a href="{{page.permalink}}" class="btn-sm btn btn-light">Читать →</a>
     </article>
