@@ -169,6 +169,10 @@ footer {
   text-align: center;
 }
 
+.btn-sm {
+  font-size: 0.83rem !important;
+}
+
 .text-small {
   font-size: $text-small;
 }
@@ -201,4 +205,8 @@ footer {
   color: #a0a0a0;
 
   font-weight: bold;
+}
+
+.vertical-align {
+  margin: auto 0;
 }

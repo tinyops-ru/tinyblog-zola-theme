@@ -10,21 +10,28 @@
 <div>
     {% if extra.website %}
         <div class="d-inline-block text-secondary">
-            <a href="https://{{extra.website}}" class="btn btn-sm btn-light" target="_blank">{{extra.website}}</a>
+            <a href="https://{{extra.website}}" class="btn btn-sm btn-light"
+               target="_blank">{{extra.website}}
+                <img src="/icons/link.svg" alt="сайт" class="ml-1">
+            </a>
         </div>
     {% endif %}
 
     {% if extra.github %}
         <div class="d-inline-block text-secondary">
             <a href="https://github.com/{{extra.github}}" class="btn btn-sm btn-light"
-               target="_blank">{{extra.github}} <i class="fab fa-github"></i></a>
+               target="_blank">{{extra.github}}
+                <img src="/icons/github.svg" alt="github">
+            </a>
         </div>
     {% endif %}
 
     {% if extra.twitter %}
         <div class="d-inline-block text-secondary">
             <a href="https://twitter.com/{{extra.twitter}}" class="btn btn-sm btn-light"
-               target="_blank">twitter <i class="fab fa-twitter"></i></a>
+               target="_blank">twitter
+               <img src="/icons/twitter.svg" alt="twitter" class="ml-1">
+            </a>
         </div>
 
     {% endif %}
@@ -32,7 +39,9 @@
 
         <div class="d-inline-block text-secondary">
             <a href="https://instagram.com/{{extra.instagram}}" class="btn btn-sm btn-light"
-               target="_blank">{{extra.instagram}} <i class="fab fa-instagram"></i></a>
+               target="_blank">
+                {{extra.instagram}} <img src="/icons/instagram.svg" alt="instagram" class="ml-1">
+            </a>
         </div>
 
     {% endif %}
@@ -47,14 +56,15 @@
     {% if extra.email %}
         <div class="d-inline-block text-secondary">
             <a href="mailto:{{extra.email}}"
-               class="btn btn-sm btn-light" target="_blank">почта <i class="far fa-envelope"></i></a>
+               class="btn btn-sm btn-light" target="_blank">почта
+                <img src="/icons/mail.svg" alt="e-mail" class="ml-1"></a>
         </div>
     {% endif %}
 
     {% if rss %}
         <div class="d-inline-block text-secondary">
-            <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light"
-               target="_blank">rss <i class="fas fa-rss"></i>
+            <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light vertical-align"
+               target="_blank">rss <img src="/icons/rss.svg" alt="rss" class="ml-1">
             </a>
         </div>
     {% endif %}
