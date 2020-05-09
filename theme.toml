@@ -1,9 +1,9 @@
 name = "TinyBlog"
 description = "Light and simple blog theme"
 license = "MIT"
-homepage = "https://github.com/lebe-dev/tinyblog-zola-theme"
+homepage = "https://github.com/tinyops-ru/tinyblog-zola-theme"
 min_version = "0.4.1"
-demo = "https://github.com/lebe-dev"
+demo = "https://b.tinyops.ru"
 
 taxonomies = [
  {name = "tags", rss = true},
