@@ -31,7 +31,8 @@
       {% else %}
       <p>{{ page.description | striptags | safe }}</p>
       {% endif %}
-      <a href="{{page.permalink}}" class="btn-sm btn btn-light">Читать →</a>
+
+      <a href="{{page.permalink}}" class="btn-sm btn btn-light mt-3">Читать →</a>
     </article>
     {% endfor %}
   </section>
