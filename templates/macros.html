@@ -11,7 +11,7 @@
     {% if extra.website %}
         <div class="d-inline-block text-secondary">
             <a href="https://{{extra.website}}" class="btn btn-sm btn-light"
-               title="Открыть сайт в новой вкладке"
+               title="{{extra.website_button_hint}}"
                target="_blank">{{extra.website}}
                 <img src="/icons/link.svg" alt="сайт" class="ml-1">
             </a>
@@ -21,7 +21,7 @@
     {% if extra.github %}
         <div class="d-inline-block text-secondary">
             <a href="https://github.com/{{extra.github}}" class="btn btn-sm btn-light"
-               title="Перейти на страницу GitHub"
+               title="{{extra.github_button_hint}}"
                target="_blank">{{extra.github}}
                 <img src="/icons/github.svg" alt="github">
             </a>
@@ -31,7 +31,7 @@
     {% if extra.twitter %}
         <div class="d-inline-block text-secondary">
             <a href="https://twitter.com/{{extra.twitter}}" class="btn btn-sm btn-light"
-               title="Перейти в Twitter"
+               title="{{extra.twitter_button_hint}}"
                target="_blank">twitter
                <img src="/icons/twitter.svg" alt="twitter" class="ml-1">
             </a>
@@ -42,7 +42,7 @@
 
         <div class="d-inline-block text-secondary">
             <a href="https://instagram.com/{{extra.instagram}}" class="btn btn-sm btn-light"
-               title="Перейти в Instagram"
+               title="{{extra.instagram_button_hint}}"
                target="_blank">
                 {{extra.instagram}} <img src="/icons/instagram.svg" alt="instagram" class="ml-1">
             </a>
@@ -52,14 +52,14 @@
 
     {% if extra.youtube %}
         <div class="d-inline-block text-secondary">
-            <a href="https://youtube.com/{{extra.youtube}}"
+            <a href="https://youtube.com/{{extra.youtube}}" title="{{extra.youtube_button_hint}}"
                class="btn btn-sm btn-light" target="_blank">{{extra.youtube}}</a>
         </div>
     {% endif %}
 
     {% if extra.email %}
         <div class="d-inline-block text-secondary">
-            <a href="mailto:{{extra.email}}"
+            <a href="mailto:{{extra.email}}" title="{{extra.email_button_hint}}"
                class="btn btn-sm btn-light" target="_blank">почта
                 <img src="/icons/mail.svg" alt="e-mail" class="ml-1"></a>
         </div>
@@ -67,7 +67,7 @@
 
     {% if rss %}
         <div class="d-inline-block text-secondary">
-            <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light vertical-align"
+            <a href="{{siteurl}}/rss.xml" class="btn btn-sm btn-light vertical-align" title="Посмотреть RSS-ленту"
                target="_blank">rss <img src="/icons/rss.svg" alt="rss" class="ml-1">
             </a>
         </div>

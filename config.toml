@@ -27,20 +27,29 @@ taxonomies = [
 ]
 
 [extra]
-website = "b.tinyops.ru"
-github = "tinyops-ru"
-twitter = "mental_foreplay"
-# linkedin = ""
-email = "your@email.com"
-# instagram = ""
-# youtube = ""
 
+# FAVICON
+favicon_type = "image/x-icon"
+
+# BUTTONS
+website = "b.tinyops.ru"
+website_button_hint = "Перейти на сайт"
+github = "tinyops-ru"
+github_button_hint = "Перейти на мою страницу в Github"
+twitter = "mental_foreplay"
+twitter_button_hint = "Перейти в мой Twitter"
+email = "your@email.com"
+email_button_hint = "Написать мне на почту"
+# instagram = ""
+instagram_button_hint = "Перейти на мою страницу в Instagram"
+# youtube = ""
+youtube_button_hint = "Перейти на мой канал в YouTube"
+
+# OPEN GRAPH
 open_graph_url = "https://b.tinyops.ru"
 open_graph_type = "blog"
 open_graph_title = "William of Ockham Blog"
 open_graph_image = ""
-
-favicon_type = "image/x-icon"
 
 #------------------------------------------
 # YANDEX
