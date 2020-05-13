@@ -1,13 +1,23 @@
 {% macro mini_logo(classes, title, siteurl) %}
 <div id="logo" class="p-4">
     <a href="{{siteurl}}" title="Вернуться на главную страницу">
-        <i class="logo__icon fas fa-chevron-left mr-1"></i> {{title}}
+        <i class="logo__icon fas fa-chevron-left mr-1"></i> < Назад
     </a>
 </div>
 {% endmacro mini_logo %}
 
 {% macro social_list(classes, bsize, extra, rss, siteurl) %}
 <div>
+    {% if extra.enable_about_blog_page %}
+    <div class="d-inline-block text-secondary">
+        <a href="/about" class="btn btn-sm btn-light"
+           title="О блоге"
+           target="_blank">о блоге
+            <img src="/icons/person.svg" alt="О блоге" class="ml-1">
+        </a>
+    </div>
+    {% endif %}
+
     {% if extra.website %}
         <div class="d-inline-block text-secondary">
             <a href="https://{{extra.website}}" class="btn btn-sm btn-light"

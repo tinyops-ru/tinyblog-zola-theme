@@ -31,6 +31,9 @@ taxonomies = [
 # FAVICON
 favicon_type = "image/x-icon"
 
+# ABOUT PAGE
+enable_about_blog_page = true
+
 # BUTTONS
 website = "b.tinyops.ru"
 website_button_hint = "Перейти на сайт"
