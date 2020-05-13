@@ -1,9 +1,9 @@
 # The URL the site will be built for
 base_url = "https://b.tinyops.ru/tinyblog"
 
-title = "William of Ockham Blog"
+title = "Блог Уильяма Оккама"
 # a description; you can use markdown here if you like
-description="\"*The explanation requiring the fewest assumptions is most likely to be correct..*\""
+description="\"*Не следует привлекать новые сущности без крайней на то необходимости*\""
 default_language = "ru"
 
 highlight_theme = "solarized-light"
