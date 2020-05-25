@@ -27,6 +27,7 @@ taxonomies = [
 ]
 
 [extra]
+keywords = "блог"
 
 # FAVICON
 favicon_type = "image/x-icon"
