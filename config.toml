@@ -37,16 +37,27 @@ enable_about_blog_page = true
 
 # BUTTONS
 website = "b.tinyops.ru"
+website_button_title = "TinyOps"
 website_button_hint = "Перейти на сайт"
+
 github = "tinyops-ru"
+github_button_title = "GitHub"
 github_button_hint = "Перейти на мою страницу в Github"
+
 twitter = "mental_foreplay"
+twitter_button_title = "Twitter"
 twitter_button_hint = "Перейти в мой Twitter"
+
 email = "your@email.com"
+email_button_title = "Написать"
 email_button_hint = "Написать мне на почту"
-# instagram = ""
+
+instagram = "soel79"
+instagram_button_title = "Instagram"
 instagram_button_hint = "Перейти на мою страницу в Instagram"
+
 # youtube = ""
+youtube_button_title = "YouTube"
 youtube_button_hint = "Перейти на мой канал в YouTube"
 
 # OPEN GRAPH
