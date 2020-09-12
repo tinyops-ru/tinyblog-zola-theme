@@ -4,13 +4,13 @@
 {% block content %}
 <div class="container">
 
-  <header class="pt-3 mb-2">
+  <header class="mb-2">
     {% block header %}
 
     {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
 
-    <h1 class="blog-title text-primary mb-4">{{config.title}}</h1>
-    <h5 class="text-secondary mb-4">{{config.description | markdown(inline=true) | safe }}</h5>
+    <h1 class="blog-title text-primary mb-0">{{config.title}}</h1>
+    <h5 class="text-secondary mb-4 mt-3">{{config.description | markdown(inline=true) | safe }}</h5>
     {% endblock header %}
   </header>
 
