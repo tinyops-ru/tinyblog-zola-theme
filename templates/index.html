@@ -4,34 +4,34 @@
 {% block content %}
 <div class="container">
 
-  <header class="pt-3 pb-5 mb-2 text-center">
+  <header class="pt-3 mb-2">
     {% block header %}
+
+    {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
 
     <h1 class="blog-title text-primary mb-4">{{config.title}}</h1>
     <h5 class="text-secondary mb-4">{{config.description | markdown(inline=true) | safe }}</h5>
-
-    {{ macros::social_list(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
     {% endblock header %}
   </header>
 
   <section>
     {% for page in paginator.pages %}
-    <article class="d-block mt-0">
-      <h5 class="main-page__article-title d-inline-block mt-0 mr-2 mb-1">
-        <a href="{{page.permalink}}">{{page.title}}</a>
-      </h5>
+      <article class="d-block mt-0">
+        <h5 class="main-page__article-title d-inline-block mt-0 mr-2 mb-1">
+          <a href="{{page.permalink}}">{{page.title}}</a>
+        </h5>
 
-      <div class="d-inline-block">
-        <h5><time class="article_time" datetime="{{page.date}}">{{ page.date | date(format="%d.%m.%Y") }}</time></h5>
-      </div>
-    </article>
+        <div class="d-inline-block">
+          <h5><time class="article_time" datetime="{{page.date}}">{{ page.date | date(format="%d.%m.%Y") }}</time></h5>
+        </div>
+      </article>
     {% endfor %}
   </section>
 </div>
 {% endblock content %}
 
 {% block pagination %}
-<nav class="container text-center mb-5">
+<nav class="container text-center mb-5 mt-5">
   {% if paginator.previous %}
     <span class="prev">
       <a rel="prev" class="btn btn-sm btn-light" href="{{paginator.previous}}" title="Предыдущая страница">← назад</a>

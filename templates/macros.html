@@ -1,3 +1,84 @@
+{% macro top_menu(classes, bsize, extra, rss, siteurl) %}
+<div>
+    {% if extra.enable_about_blog_page %}
+    <h5 class="d-inline-block mr-3">
+        <a href="/about" class="main-page__top-menu__item">О блоге</a>
+    </h5>
+    {% endif %}
+
+    {% if extra.website %}
+    <h5 class="d-inline-block mr-3">
+        <a href="//{{extra.website}}"
+           title="{{extra.website_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">{{extra.website}}</a>
+    </h5>
+    {% endif %}
+
+    {% if extra.github %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://github.com/{{extra.github}}"
+           title="{{extra.github_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">GitHub</a>
+    </h5>
+    {% endif %}
+
+    {% if extra.twitter %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://twitter.com/{{extra.twitter}}"
+           title="{{extra.twitter_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">Twitter</a>
+    </h5>
+    {% endif %}
+
+    {% if extra.instagram %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://instagram.com/{{extra.instagram}}"
+           title="{{extra.instagram_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            Instagram
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.youtube %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://youtube.com/{{extra.youtube}}"
+           title="{{extra.youtube_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            YouTube
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.email %}
+    <h5 class="d-inline-block mr-3">
+        <a href="mailto:{{extra.email}}"
+           title="{{extra.email_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.email}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if rss %}
+    <h5 class="d-inline-block mr-3">
+        <a href="{{siteurl}}/rss.xml"
+           title="Посмотреть RSS-ленту"
+           target="_blank"
+           class="main-page__top-menu__item">
+            RSS
+        </a>
+    </h5>
+    {% endif %}
+</div>
+{% endmacro social_list %}
+
 {% macro mini_logo(classes, title, siteurl) %}
 <div id="logo" class="p-4">
     <a href="{{siteurl}}" title="Вернуться на главную страницу">
