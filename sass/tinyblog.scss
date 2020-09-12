@@ -10,8 +10,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 
   line-height: 1;
 
@@ -71,6 +70,10 @@ p {
   padding-top: 10px;
 
   margin-bottom: 0;
+}
+
+.main-page__article-title {
+  border-bottom: 3px solid lightgray;
 }
 
 table {
@@ -137,8 +140,6 @@ blockquote {
 }
 
 #logo {
-  font-family: 'Montserrat', 'Raleway', sans-serif;
-
   font-size: 1.2em;
 
   font-weight: 700;
