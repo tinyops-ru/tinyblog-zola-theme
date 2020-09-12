@@ -10,29 +10,20 @@
     <h1 class="blog-title text-primary mb-4">{{config.title}}</h1>
     <h5 class="text-secondary mb-4">{{config.description | markdown(inline=true) | safe }}</h5>
 
-    {{ macros::social_list(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,
-    rss=config.generate_rss) }}
+    {{ macros::social_list(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
     {% endblock header %}
   </header>
 
   <section>
     {% for page in paginator.pages %}
-    <article class="mb-5">
-      <h2 class="mb-1">
+    <article class="d-block mt-0">
+      <h5 class="main-page__article-title d-inline-block mt-0 mr-2 mb-1">
         <a href="{{page.permalink}}">{{page.title}}</a>
-      </h2>
-      {% if page.date %}
-      {{ macros::frontmatter(classes="", date=page.date, word_count=page.word_count, read_time=page.reading_time) }}
-      {% else %}
-      {{ macros::frontmatter(classes="", date="", word_count=page.word_count, read_time=page.reading_time) }}
-      {% endif %}
-      {% if page.summary %}
-      <p>{{ page.summary | safe }}</p>
-      {% else %}
-      <p>{{ page.description | striptags | safe }}</p>
-      {% endif %}
+      </h5>
 
-      <a href="{{page.permalink}}" class="btn-sm btn btn-light mt-3">Читать →</a>
+      <div class="d-inline-block">
+        <h5><time class="article_time" datetime="{{page.date}}">{{ page.date | date(format="%d.%m.%Y") }}</time></h5>
+      </div>
     </article>
     {% endfor %}
   </section>
