@@ -6,7 +6,7 @@ title = "Блог Уильяма Оккама"
 description="\"*Не следует привлекать новые сущности без крайней на то необходимости*\""
 default_language = "ru"
 
-highlight_theme = "solarized-light"
+highlight_theme = "charcoal"
 generate_rss = true
 rss_limit = 20
 
