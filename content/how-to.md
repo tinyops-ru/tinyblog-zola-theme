@@ -102,7 +102,7 @@ impl Plugin for Whisper {
 
 ## Ссылки
 
-[Пример ссылки](https://github.com/lebe-dev/tinyblog-zola-theme)
+[Пример ссылки](https://tinyops.ru)
 
 ## Таблицы
 
