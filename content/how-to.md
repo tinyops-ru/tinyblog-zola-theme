@@ -2,6 +2,7 @@
 title = "Возможности разметки Markdown"
 description = "Рассказ о всех возможностях Markdown, как использовать заголовки, ссылки, цитаты, вставлять код и многое другое."
 date = 2020-01-21T15:00:00Z
+updated = 2020-09-13
 
 [taxonomies]
 categories=["tutorials"]
