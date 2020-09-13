@@ -15,15 +15,13 @@
 {% endblock open_graph_description %}
 
 {% block content %}
-<nav id="overlord" class="overlord">
-    {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url) }}
-</nav>
-
 <section class="container">
+    {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
+
     {% block post %}
-    <h1 class="page-title mt-0">
+    <h2 class="page-title mt-5">
         {{ page.title }}
-    </h1>
+    </h2>
 
     {{ page.content | safe }}
     {% endblock post %}
