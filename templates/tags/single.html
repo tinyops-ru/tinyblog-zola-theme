@@ -14,11 +14,9 @@
 {% endblock open_graph_description %}
 
 {% block content %}
-<nav id="overlord" class="overlord">
-  {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
-</nav>
-
 <section class="container">
+    {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
+
     <h3 class="text-dark mb-4">Все материалы с тэгом <span class="text-primary">{{ term.name }}</span></h3>
 
     {% set tags = get_taxonomy(kind="tags") %}
