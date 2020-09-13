@@ -14,14 +14,10 @@
 {% endblock open_graph_description %}
 
 {% block content %}
-<nav id="overlord" class="overlord">
-  {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
-</nav>
-
 <section class="container">
+    {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
 
-    <h3 class="text-dark">Тэги</h3>
-    <div class="text-secondary text-small font-weight-bold mb-4">Все доступные тэги</div>
+    <h3 class="text-dark">Все тэги блога</h3>
 
     {% set tags = get_taxonomy(kind="tags") %}
     {% set items = tags.items %}
@@ -30,7 +26,8 @@
         {% for tag in items %}
             <li class="p-0 m-0">
                 <h6 class="mt-0 mb-2">
-                    <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
+                    <a href="/tags/{{ tag.name }}"
+                       title="Перейти к списку постов с тэгом '{{tag.name}}'">{{ tag.name }}</a>
                 </h6>
             </li>
         {% endfor %}
