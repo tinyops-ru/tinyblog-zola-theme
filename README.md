@@ -14,7 +14,7 @@
 ```
 [submodule "themes/tinyblog"]
 	path = themes/tinyblog
-	url = git@github.com:lebe-dev/tinyblog-zola-theme.git
+	url = https://github.com/tinyops-ru/tinyblog-zola-theme.git
 ```
 
 **2. Создаем под каталог для темы**
