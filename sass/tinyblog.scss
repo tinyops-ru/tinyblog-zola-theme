@@ -171,6 +171,10 @@ blockquote {
 
 footer {
   text-align: center;
+
+  a {
+    color: lightgray;
+  }
 }
 
 .btn-sm {
@@ -183,6 +187,10 @@ footer {
 
 .text-tiny {
   font-size: $text-tiny;
+}
+
+.text-tiniest {
+  font-size: $text-tiniest;
 }
 
 .blog-title {
