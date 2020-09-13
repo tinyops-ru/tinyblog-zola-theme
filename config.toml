@@ -36,7 +36,7 @@ favicon_type = "image/x-icon"
 enable_about_blog_page = true
 
 # BUTTONS
-website = "b.tinyops.ru"
+website = "tinyops.ru"
 website_button_title = "TinyOps"
 website_button_hint = "Перейти на сайт"
 
