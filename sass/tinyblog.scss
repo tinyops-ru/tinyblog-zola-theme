@@ -139,6 +139,8 @@ li {
 
 a {
   color: $accent;
+
+  word-break: break-word;
 }
 
 a:hover {
