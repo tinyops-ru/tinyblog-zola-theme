@@ -1,5 +1,5 @@
 {% macro top_menu(classes, bsize, extra, rss, siteurl) %}
-<div>
+<div class="pt-4 pb-3">
     {% if extra.enable_about_blog_page %}
     <h5 class="d-inline-block mr-3">
         <a href="/about" class="main-page__top-menu__item">О блоге</a>
@@ -88,7 +88,9 @@
 {% macro mini_logo(classes, title, siteurl) %}
 <div id="logo" class="p-4">
     <a href="{{siteurl}}" title="Вернуться на главную страницу">
-        &lsaquo; Назад
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 25 25">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
     </a>
 </div>
 {% endmacro mini_logo %}

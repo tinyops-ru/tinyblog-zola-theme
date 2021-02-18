@@ -10,14 +10,14 @@
     {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
 
     <h1 class="blog-title text-primary mb-0">{{config.title}}</h1>
-    <h5 class="text-secondary mb-4 mt-3">{{config.description | markdown(inline=true) | safe }}</h5>
+    <h5 class="text-secondary mb-5 mt-3">{{config.description | markdown(inline=true) | safe }}</h5>
     {% endblock header %}
   </header>
 
   <section>
     {% for page in paginator.pages %}
-      <article class="d-block mt-0 mb-2">
-        <h5 class="main-page__article-title d-inline-block mt-0 mr-0 mr-lg-2 mb-0" style="height:auto">
+      <article class="d-block mb-3">
+        <h5 class="main-page__article-title d-inline-block mt-0 mr-2 mb-1">
           <a href="{{page.permalink}}">{{page.title}}</a>
         </h5>
 
@@ -34,14 +34,23 @@
 <nav class="container text-center mb-5 mt-5">
   {% if paginator.previous %}
     <span class="prev">
-      <a rel="prev" class="btn btn-sm btn-light" href="{{paginator.previous}}" title="Предыдущая страница">← назад</a>
+      <a rel="prev" class="btn btn-sm btn-light" href="{{paginator.previous}}" title="Предыдущая страница">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+      </a>
     </span>
   {% endif %}
 
   {% if paginator.next %}
   <span class="next">
     <a rel="next" title="Следующая страница"
-       href="{{paginator.next}}" class="btn btn-sm btn-light">вперед →</a>
+       href="{{paginator.next}}" class="btn btn-sm btn-light">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
   </span>
   {% endif %}
 </nav>

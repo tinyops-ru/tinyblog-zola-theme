@@ -21,9 +21,9 @@ highlight_code = true
 build_search_index = false
 
 taxonomies = [
- {name = "tags", rss = true},
- {name = "categories", paginate_by = 5, rss = true},  # 5 items per page for a term
- {name = "authors"} # Basic definition: no RSS or pagination
+ {name = "tags", paginate_by = 30, rss = true},
+ {name = "categories", paginate_by = 30, rss = true},  # 5 items per page for a term
+ {name = "authors", paginate_by = 30} # Basic definition: no RSS or pagination
 ]
 
 [extra]
