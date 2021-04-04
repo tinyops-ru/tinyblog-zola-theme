@@ -7,14 +7,15 @@ html, body {
 
   color: $black;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
+
+  line-height: 23px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-
-  line-height: 1;
 
   margin-top: 30px;
 
@@ -67,6 +68,12 @@ pre {
   margin-top: 10px;
 
   padding: 10px $default_padding;
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+
+  font-size: 0.9rem;
 }
 
 .container {
@@ -239,9 +246,7 @@ footer {
 .article_time {
   text-transform: uppercase;
 
-  font-size: 0.83em;
-
-  line-height: 2.3rem;
+  font-size: 0.9rem;
 
   color: #a0a0a0;
 
