@@ -7,8 +7,8 @@ description="\"*Не следует привлекать новые сущнос
 default_language = "ru"
 
 highlight_theme = "charcoal"
-generate_rss = true
-rss_limit = 20
+generate_feed = true
+feed_limit = 100
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -21,9 +21,8 @@ highlight_code = true
 build_search_index = false
 
 taxonomies = [
- {name = "tags", paginate_by = 30, rss = true},
- {name = "categories", paginate_by = 30, rss = true},  # 5 items per page for a term
- {name = "authors", paginate_by = 30} # Basic definition: no RSS or pagination
+ {name = "tags", paginate_by = 30},
+ {name = "categories", paginate_by = 30}
 ]
 
 [extra]

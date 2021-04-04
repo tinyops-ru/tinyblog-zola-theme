@@ -57,6 +57,10 @@
   <!-- theme -->
   <link rel="stylesheet" href="{{ config.base_url }}/tinyblog.css">
 
+  {% block rss %}
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+  {% endblock %}
+
   {% endblock head %}
 </head>
 
