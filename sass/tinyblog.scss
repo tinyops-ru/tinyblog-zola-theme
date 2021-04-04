@@ -137,16 +137,13 @@ details {
   font-size: 15px;
 }
 
-ul {
-  margin-top: 15px;
-}
-
-ol {
-  margin-top: 5px;
+ol, ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem !important;
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 a {
