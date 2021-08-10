@@ -29,7 +29,7 @@
 
   <div class="mb-3 mt-3">
     {% for tag in page.taxonomies['tags'] %}
-      <a class="font-weight-bold text-secondary mr-1" href="/tags/{{tag}}/" title="Посмотреть все посты с тэгом '{{tag}}'">#{{tag}}</a>
+      <a class="tag text-secondary me-1" href="/tags/{{tag}}/" title="Посмотреть все посты с тэгом '{{tag}}'">#{{tag}}</a>
     {% endfor %}
   </div>
 

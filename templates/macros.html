@@ -1,13 +1,13 @@
 {% macro top_menu(classes, bsize, extra, rss, siteurl) %}
 <div class="pt-4 pb-3">
     {% if extra.enable_about_blog_page %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="/about" class="main-page__top-menu__item">О блоге</a>
     </h5>
     {% endif %}
 
     {% if extra.website %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="//{{extra.website}}"
            title="{{extra.website_button_hint}}"
            target="_blank"
@@ -18,7 +18,7 @@
     {% endif %}
 
     {% if extra.github %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="https://github.com/{{extra.github}}"
            title="{{extra.github_button_hint}}"
            target="_blank"
@@ -29,7 +29,7 @@
     {% endif %}
 
     {% if extra.twitter %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="https://twitter.com/{{extra.twitter}}"
            title="{{extra.twitter_button_hint}}"
            target="_blank"
@@ -40,7 +40,7 @@
     {% endif %}
 
     {% if extra.instagram %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="https://instagram.com/{{extra.instagram}}"
            title="{{extra.instagram_button_hint}}"
            target="_blank"
@@ -51,7 +51,7 @@
     {% endif %}
 
     {% if extra.youtube %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="https://youtube.com/{{extra.youtube}}"
            title="{{extra.youtube_button_hint}}"
            target="_blank"
@@ -62,7 +62,7 @@
     {% endif %}
 
     {% if extra.email %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="mailto:{{extra.email}}"
            title="{{extra.email_button_hint}}"
            target="_blank"
@@ -73,7 +73,7 @@
     {% endif %}
 
     {% if rss %}
-    <h5 class="d-inline-block mr-3">
+    <h5 class="d-inline-block me-3">
         <a href="{{siteurl}}/atom.xml"
            title="Посмотреть Feed"
            target="_blank"
@@ -90,7 +90,7 @@
 {% endmacro social_list %}
 
 {% macro mini_logo(classes, title, siteurl) %}
-<div id="logo" class="pl-3 pt-3 pl-lg-4 pt-lg-4 mb-2 mb-lg-0">
+<div id="logo" class="ps-3 pt-3 ps-lg-4 pt-lg-4 mb-2 mb-lg-0">
     <a href="{{siteurl}}" title="Вернуться на главную страницу">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
              class="bi bi-arrow-left" viewBox="0 0 20 20">
