@@ -6,7 +6,7 @@ title = "Блог Уильяма Оккама"
 description="\"*Не следует привлекать новые сущности без крайней на то необходимости*\""
 default_language = "ru"
 
-highlight_theme = "charcoal"
+highlight_theme = "base16-ocean-dark"
 generate_feed = true
 feed_limit = 100
 
@@ -24,6 +24,9 @@ taxonomies = [
  {name = "tags", paginate_by = 30},
  {name = "categories", paginate_by = 30}
 ]
+
+[markdown]
+highlight_code = true
 
 [extra]
 keywords = "блог"
