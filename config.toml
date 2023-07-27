@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://b.tinyops.ru/tinyblog"
+base_url = "https://b.tinyops.ru"
 
 title = "Блог Уильяма Оккама"
 # a description; you can use markdown here if you like
